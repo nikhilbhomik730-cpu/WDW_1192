@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5500/Exp-3/Project2.html%20exp2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="2" style="border-collapse: collapse" height="370">
+      <tbody><tr>
+        <th>
+          <table cellpading="20" style="border-collapse: collapse;" align="center" border="2" height="300">
+            <caption>
+              College Timetable - CSE Deprtment
+            </caption>
+            <tbody><tr>
+              <th>Day/Time</th>
+
+              <th>9:00-10:00</th>
+              <th>10:00-11:00</th>
+              <th>11:00-12:00</th>
+              <th>12:00-1:00</th>
+              <th>1:00-2:00</th>
+              <th>2:00-3:00</th>
+              <th>3:00-4:00</th>
+            </tr>
+            <tr align="center">
+              <td>Monday</td>
+              <td rowspan="2">Mathematics</td>
+              <td>English</td>
+              <td rowspan="3">Physics</td>
+              <td>Break</td>
+              <td colspan="2">Computer Lab</td>
+              <td>Sports</td>
+            </tr>
+            <tr align="center">
+              <td>Tuesday</td>
+              <td>C Proramming</td>
+              <td>Break</td>
+              <td colspan="2">Electronics Lab</td>
+              <td>Library</td>
+            </tr>
+            <tr align="center">
+              <td>Wednesday</td>
+              <td>Mathematics</td>
+              <td>English</td>
+              <td>Break</td>
+              <td>Computer Network</td>
+              <td colspan="2">
+                <table border="2" style="border-collapse: collapse" height="180">
+                  <tbody><tr>
+                    <th align="center" colspan="2">Lab Details</th>
+                  </tr>
+                  <tr>
+                    <td>Btech A</td>
+                    <td>DBMS Lab</td>
+                  </tr>
+                  <tr>
+                    <td>Btech B</td>
+                    <td>OS Lab</td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            <tr align="center">
+              <td>Thursday</td>
+              <td colspan="2">Workshop</td>
+              <td>Physics</td>
+              <td>Break</td>
+              <td>Mathematics</td>
+              <td>English</td>
+              <td>Seminar</td>
+            </tr>
+            <tr align="center">
+              <td>Friday</td>
+              <td>Computer Network</td>
+              <td>English</td>
+              <td>Physics</td>
+              <td>Break</td>
+              <td colspan="3">Project Work</td>
+            </tr>
+          </tbody></table>
+        </th>
+      </tr>
+    </tbody></table>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
